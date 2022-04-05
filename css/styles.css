@@ -1,3 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
 * {
     box-sizing: border-box;
   }
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+  
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*position: relative; */
+  background-color: #EEF9BF;
+}
+
+.title-game {
+  width: 540px;
+  height: 63px;
+  margin-top: 40px; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: -0.004em;
+  color: #75B79E;
+  
+
+}
+
+.cards-game {
+  width: 846px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.card {
+  margin-top: 50px;
+  margin-left: 10px; 
+  width: 117px;
+  height: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #A7E9AF;
+  border: 1px solid #99CEA8;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+/* Responsividade com @media (max-width: 00px) */
+@media (max-width: 551px) {
+
+  .container {
+    width: 100%;
+
+  }
+
+  .title-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    text-align: center;
+  }
+
+}
