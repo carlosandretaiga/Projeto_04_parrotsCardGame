@@ -16,10 +16,9 @@ a {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*position: relative; */
   background-color: #EEF9BF;
 }
 
@@ -38,71 +37,118 @@ a {
 
 }
 
+button {
+  margin-top: 32px; 
+  background-color: #A7E9AF;
+  font-family: Roboto;
+  font-weight: 500;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  border: 3px solid #65b37a;
+  border-radius: 5px;
+}
+
+button:hover{
+  filter: brightness(1.1);
+  cursor: pointer;
+  font-weight: 600;
+
+}
+
+/*onde as cartas serão posicionadas*/
 .cards-game {
-  width: 846px;
-  padding-bottom: 200px;
+  max-width: 950px;
+  max-height: 200px;
+  margin-top: 30px; 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-around;
 }
 
 
 .card {
-  margin-top: 50px;
-  margin-left: 10px; 
   width: 117px;
   height: 146px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 17px;
   position: relative; 
-
   background-color: #A7E9AF;
   border: 1px solid #99CEA8;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
-.card img {
-  width: 100px;
-  height: 100px;
-}
-
-.escondido {
-  display: none;
-}
-
-/* essa parte veio do exemplo fornecido */
-
-.face {
-  width: 100%;
-  height: 100%;
-  background-color: #A7E9AF;
-  border-radius: 5px; 
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  backface-visibility: hidden;
+.card-verse {
+  background-image: url("/images/front.png");
+  background-size: 100px; 
+  background-position: center;
+  background-repeat: no-repeat;
   transition: all .5s;
   transform-style: preserve-3d;
 }
 
-
-.back-face {
+.card-front-bobrossparrot {
+  background-image: url("/images/bobrossparrot.gif");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
   transform: rotateY(180deg);
 }
 
-.card:hover .back-face {
-  transform: rotateY(0deg);
+
+.card-front-explodyparrot {
+  background-image: url("/images/explodyparrot.gif");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
 }
 
-.card:hover .front-face {
-  transform: rotateY(-180deg);
+
+.card-front-fiestaparrot {
+  background-image: url("/images/fiestaparrot.gif");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
 }
-/* fim   */
+
+.card-front-metalparrot {
+  background-image: url("/images/metalparrot.gif");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+.card-front-revertitparrot {
+  background-image: url("/images/revertitparrot.gif");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+.card-front-tripletsparrot {
+  background-image: url("/images/tripletsparrot.gif");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+.card-front-unicornparrot {
+  background-image: url("/images/unicornparrot.gif");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+/* class de esconder */
+.hide {
+  display: none;
+}
 
 /* Responsividade com @media (max-width: 00px) */
 @media (max-width: 551px) {
