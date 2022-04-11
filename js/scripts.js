@@ -110,6 +110,11 @@ function Gif() {
 
 Gif(); 
 
+function mostrarCarta () {
+    let novo = document.querySelector(".card .back-face.face"); 
+    novo.classList.remove("escondido")
+}
+
 
 function adicionarCartas () {
     const carta = document.querySelector(".cards-game"); 
@@ -118,7 +123,7 @@ function adicionarCartas () {
     for (let i = 0; i < nameGif.length; i++) {
 
         carta.innerHTML += `
-          <div class="card">
+          <div class="card" onclick="mostrarCarta()">
           <div class="front-face face">
              <img src="images/front.png" >
           </div>
