@@ -7,9 +7,7 @@ let firstCard;
 let secondCard; 
 let endGame = 0; 
 let clickCounter = 0; 
-let nameGif; 
-let arr3; 
-let sGame; 
+
 
 
 //cartas gif com link com class
@@ -135,7 +133,7 @@ function upturnedYNCard (card) {
 
                     const backButton = document.querySelector(".hide"); 
                     backButton.classList.remove("hide"); 
-                    const refreshPage = document.querySelector("#refresh"); 
+                    const refreshPage = document.querySelector("#refresh-page"); 
                     refreshPage.addEventListener("click", function () {
                         location.reload(); 
                     });
